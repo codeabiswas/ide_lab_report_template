@@ -1,0 +1,116 @@
+%----------------------------------------------------------------------------------------------------------------------------
+% Lab Report Template - Interface and Digital Electronics
+% pdfLaTeX Template
+% Version 1.0 (Sunday, September 8, 2019)
+%
+% Original Author: Andrei Biswas (GitHub: codeabiswas)
+% 
+% Important notes:
+% * Compile this template with pdfLaTeX
+% * This Cover Page will compile everything. All sections are inputs on this file. They are also .tex files and will compile 
+%	properly if syntax is all right.
+% * Anything comments that the user sees in all capital letters means they have to edit that part for desired output.
+%----------------------------------------------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{article} % Letterpaper: Standard US 8.5" x 11" paper. Hence, any output you see is exactly what will
+									 % 				be printed out.
+
+%----------------------------------------------------------------------------------------------------------------------------
+% LIST OF ALL PACKAGES TO BE USED
+%----------------------------------------------------------------------------------------------------------------------------
+\usepackage{geometry}
+\usepackage{tabto}
+\usepackage{changepage}
+\usepackage{graphicx}
+\usepackage{lipsum} % ***You can take out this package if you wish - it is just to produce the default writing
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{float}
+%----------------------------------------------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------------------------------------------
+% PREAMBLE OBJECTS TO BE SET FOR TEMPLATE
+%----------------------------------------------------------------------------------------------------------------------------
+\geometry{letterpaper, top=2.5cm, left=2cm, right=2cm, bottom=2.5cm} % Configure page margins for everything except for cover page
+\setcounter{secnumdepth}{0} % Enables LaTeX sections to not be numbered but still show up in Table of Contents
+\graphicspath{{report_images/}} % Folder where all the figures lie
+\setlength{\parskip}{1em} % A bit more space between paragraphs than default
+\pagestyle{fancy} % For nice header reasons 
+\fancyhf{} % For nice header reasons
+\rhead{YOUR-NAME-HERE} % PUT YOUR NAME HERE
+\lhead{Laboratory Exercise $<$Number$>$} % EDIT ACCORDINGLY AND TAKE OUT ANYTHING BETWEEN THE $s
+\rfoot{Page \thepage} % Write "Page" before the page number
+%----------------------------------------------------------------------------------------------------------------------------
+
+%---------------------------------------------------------------------------------------------------------------------------- 
+% PREAMBLE OBJECTS TO BE SET FOR COVER PAGE
+%----------------------------------------------------------------------------------------------------------------------------
+\setcounter{page}{0} % Start the counting at 0
+\thispagestyle{empty} % Don't show any page numbers or headers
+%----------------------------------------------------------------------------------------------------------------------------
+
+\begin{document}
+	
+	\begin{adjustwidth*}{2cm}{2cm} % Compress the text a bit
+		
+		\begin{center}\ \\ \ \\ \ \\
+    		\textbf{CMPE-460 Lab $<$Number$>$: $<$Title$>$} \\ % EDIT ACCORDINGLY AND TAKE OUT ANYTHING BETWEEN THE $s
+		\end{center}
+	
+		\vspace{16cm} % Add a lot of space in between
+		
+		\tabto{8.5cm} $<$YOUR-NAME-HERE$>$ \\ % EDIT ACCORDINGLY AND TAKE OUT ANYTHING BETWEEN THE $s
+		\tabto{8.5cm} \textbf{Performed: }$<$Date$>$ \\ % EDIT ACCORDINGLY AND TAKE OUT ANYTHING BETWEEN THE $s
+		\tabto{8.5cm} \textbf{Submitted: }$<$Date$>$  % EDIT ACCORDINGLY AND TAKE OUT ANYTHING BETWEEN THE $s
+				
+		\tabto{8.5cm} \textbf{Lab Section: }$<$Number$>$ \\ % EDIT ACCORDINGLY AND TAKE OUT ANYTHING BETWEEN THE $s
+		\tabto{8.5cm} \textbf{Instructor: }$<$Name$>$ \\ % EDIT ACCORDINGLY AND TAKE OUT ANYTHING BETWEEN THE $s
+		\tabto{8.5cm} \textbf{TA: }$<$Name$>$ % EDIT ACCORDINGLY AND TAKE OUT ANYTHING BETWEEN THE $s
+				
+		\tabto{8.5cm} \textbf{Lecture Section: }$<$Number$>$ \\ % EDIT ACCORDINGLY AND TAKE OUT ANYTHING BETWEEN THE $s
+		\tabto{8.5cm} \textbf{Professor: }$<$Name$>$ % EDIT ACCORDINGLY AND TAKE OUT ANYTHING BETWEEN THE $s
+		
+	\end{adjustwidth*}	
+	
+%---------------------------------------------------------------------------------------------------------------------------- 
+% TABLE OF CONTENTS: DO NOT WORRY ABOUT THIS - IT WILL ADJUST THE SECTIONS' PAGE NUMBERS ACCORDINGLY
+%----------------------------------------------------------------------------------------------------------------------------
+	\newpage
+	\renewcommand*\contentsname{Table of Contents \hrulefill}  % In case you want to change the name from Table of Contents
+	\tableofcontents % Instantiate a Table of Contents
+%----------------------------------------------------------------------------------------------------------------------------
+
+	\newpage % Force a new page
+
+%---------------------------------------------------------------------------------------------------------------------------- 
+% ABSTRACT INPUT
+%----------------------------------------------------------------------------------------------------------------------------
+	\input{report_sections/abstract}
+%----------------------------------------------------------------------------------------------------------------------------
+
+%---------------------------------------------------------------------------------------------------------------------------- 
+% PROCEDURE AND METHODOLOGY INPUT
+%----------------------------------------------------------------------------------------------------------------------------
+	\input{report_sections/procedure_methodology}
+%----------------------------------------------------------------------------------------------------------------------------
+
+%---------------------------------------------------------------------------------------------------------------------------- 
+% RESULTS INPUT
+%----------------------------------------------------------------------------------------------------------------------------
+	\input{report_sections/results}
+%----------------------------------------------------------------------------------------------------------------------------
+
+% QUESTIONS INPUT
+%----------------------------------------------------------------------------------------------------------------------------
+	\input{report_sections/questions}
+%----------------------------------------------------------------------------------------------------------------------------
+
+%---------------------------------------------------------------------------------------------------------------------------- 
+% CONCLUSION INPUT
+%----------------------------------------------------------------------------------------------------------------------------
+	\input{report_sections/conclusion}
+%----------------------------------------------------------------------------------------------------------------------------
+
+%---------------------------------------------------------------------------------------------------------------------------- 
+	
+\end{document}

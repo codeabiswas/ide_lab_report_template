@@ -1,0 +1,28 @@
+%----------------------------------------------------------------------------------------------------------------------------
+% APPENDIX PAGE
+%----------------------------------------------------------------------------------------------------------------------------
+% * List (in order) the figure # and description of all VHDL source code and waveforms that are to follow.
+%----------------------------------------------------------------------------------------------------------------------------
+\noindent \section{Questions} \vspace{-9mm} \hrulefill % Name of the section
+
+\indent \lipsum[1-2] % DELETE EVERYTHING AFTER INDENT AND START TYPING STUFF
+
+% IF YOU WANT TO MANUALLY INSERT VHDL CODE
+Here some VHDL code:
+\begin{lstlisting}{language=VHDL}
+process
+begin
+CLK <= '1'; 
+wait for 10 NS;
+CLK <= '0'; 
+wait for 10 NS;
+end process;
+\end{lstlisting}
+
+% IF YOU WANT TO JUST INSERT THE .VHD FILE
+This is VHDL code from a .vhd file:
+\lstinputlisting[language=VHDL]{report_code/wikipedia.vhd} % ARGUMENT INSIDE {} DEFINES WHERE THE .VHD FILE LIES
+
+
+
+
